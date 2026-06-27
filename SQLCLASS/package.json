@@ -1,0 +1,17 @@
+{
+  "name": "sqlclass",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Nikhil kumar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@ever-co/faker": "^6.0.0-alpha.5",
+    "@faker-js/faker": "^10.4.0",
+    "mysql2": "^3.20.0"
+  }
+}

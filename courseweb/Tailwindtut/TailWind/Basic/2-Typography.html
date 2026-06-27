@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography using Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <h1 class="text-center mt-10 text-2xl font-bold">Typography using Tailwind</h1>
+    <!-- Use utilities like font-sans and font-mono to set the font family of an element: -->
+    <!-- <hr />
+    <p class="font-sans">The quick brown fox ...</p>
+    <p class="font-serif">The quick brown fox ...</p>
+    <p class="font-mono">The quick brown fox ...</p>
+    <hr />
+    <br /><br /> -->
+
+    <!-- Using a custom value -->
+
+    <!-- Use the font-[<value>] syntax to set the font family based on a completely custom value: -->
+    <!-- <hr />
+    <p class="font-[Open_Sans] ...">Lorem ipsum dolor sit amet...</p>
+    <hr /> -->
+
+    <!-- For CSS variables, you can also use the font-(family-name:<custom-property>) syntax: -->
+
+    <!-- <p class="font-(family-name:--my-font) ...">
+      Lorem ipsum dolor sit amet...
+    </p>
+    <hr /> -->
+
+    <!-- Responsive design -->
+
+    <!-- Prefix a font-family utility with a breakpoint variant like md: to only apply the utility at medium screen sizes and above: -->
+
+    <!-- <p class="font-sans md:font-serif ...">Lorem ipsum dolor sit amet...</p>
+    <hr />
+    <br /><br /> -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- Font Size -->
+
+    <!-- Use utilities like text-sm and text-lg to set the font size of an element: -->
+    <!-- <hr />
+    <p class="text-sm">The quick brown fox ...</p>
+    <p class="text-base">The quick brown fox ...</p>
+    <p class="text-lg">The quick brown fox ...</p>
+    <p class="text-xl">The quick brown fox ...</p>
+    <p class="text-2xl">The quick brown fox ...</p>
+    <hr />
+    <br /><br /> -->
+
+    <!-- Setting the line-height -->
+
+    <!-- <hr />
+    <p class="text-sm/9">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui
+      similique expedita odit nam nihil cum laborum aut reprehenderit! Incidunt
+      necessitatibus hic ullam placeat ea. Minus culpa atque totam praesentium
+      expedita vero dolore, dolorem ducimus omnis quod blanditiis in sit modi.
+      Odio dolorum ullam, possimus ipsum aperiam quia labore magnam omnis,
+      cumque nulla sapiente autem neque rem deleniti. Voluptatibus nisi
+      voluptas, consequuntur assumenda atque ex unde vel saepe. Voluptate autem
+      aliquid odit, harum nemo, beatae inventore provident eveniet pariatur
+      assumenda vitae consequatur mollitia aspernatur, exercitationem sed ab
+      reprehenderit. Nemo vitae eaque nesciunt ipsum officiis iste sequi
+      deleniti facilis saepe suscipit.
+    </p>
+    <hr /> -->
+
+    <!-- Using a custom value -->
+
+    <!-- <p class="text-[5rem]">Lorem ipsum dolor sit amet...</p> -->
+
+    <!-- Responsive design -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- Font style (italic and non-italic) -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- font-weight -->
+
+    <!-- 
+
+    font-thin               font-weight: 100;
+    font-extralight         font-weight: 200;
+    font-light              font-weight: 300;
+    font-normal             font-weight: 400;
+    font-medium             font-weight: 500;
+    font-semibold           font-weight: 600;
+    font-bold               font-weight: 700;
+    font-extrabold          font-weight: 800;
+    font-black              font-weight: 900;
+    font-(<custom-property>)  font-[1000]
+    font-weight: var(<custom-property>);
+    
+    
+    -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- font-stretch -->
+
+    <!-- 
+
+        font-stretch-ultra-condensed            font-stretch: ultra-condensed; /* 50% */
+        font-stretch-extra-condensed            font-stretch: extra-condensed; /* 62.5% */
+        font-stretch-condensed                  font-stretch: condensed; /* 75% */
+        font-stretch-semi-condensed             font-stretch: semi-condensed; /* 87.5% */
+        font-stretch-normal                     font-stretch: normal; /* 100% */
+        font-stretch-semi-expanded              font-stretch: semi-expanded; /* 112.5% */
+        font-stretch-expanded                   font-stretch: expanded; /* 125% */
+        font-stretch-extra-expanded             font-stretch: extra-expanded; /* 150% */
+        font-stretch-ultra-expanded             font-stretch: ultra-expanded; /* 200% */
+        font-stretch-<percentage>               font-stretch: <50%>;
+        font-stretch-(<custom-property>)        font-stretch: var(--my-font-width);
+        font-stretch-[<value>]                  font-stretch: <66.66%>;    
+            
+    
+    -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- font-variant-numeric -->
+
+    <!-- 
+
+        normal-nums             font-variant-numeric: normal;
+        ordinal                 font-variant-numeric: ordinal;
+        slashed-zero            font-variant-numeric: slashed-zero;
+        lining-nums             font-variant-numeric: lining-nums;
+        oldstyle-nums           font-variant-numeric: oldstyle-nums;
+        proportional-nums       font-variant-numeric: proportional-nums;
+        tabular-nums            font-variant-numeric: tabular-nums;
+        diagonal-fractions      font-variant-numeric: diagonal-fractions;
+        stacked-fractions       font-variant-numeric: stacked-fractions;
+        
+    -->
+
+    <!-- task -> letter-spacing ???????? -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- line-clamp -->
+
+    <!-- Utilities for clamping text to a specific number of lines. -->
+
+    <!-- 
+    
+    line-clamp-<number>
+    line-clamp-none
+    line-clamp-(<custom-property>)
+    line-clamp-[<value>]
+
+    
+    -->
+
+
+
+    <!-- <article>
+      <time>Mar 10, 2020</time>
+      <h2>Boost your conversion rate</h2>
+      <p class="line-clamp-1">
+        Nulla dolor velit adipisicing duis excepteur esse in duis nostrud
+        occaecat mollit incididunt deserunt sunt. Ut ut sunt laborum ex occaecat
+        eu tempor labore enim adipisicing minim ad. Est in quis eu dolore
+        occaecat excepteur fugiat dolore nisi aliqua fugiat enim ut cillum.
+        Labore enim duis nostrud eu. Est ut eiusmod consequat irure quis
+        deserunt ex. Enim laboris dolor magna pariatur. Dolor et ad sint
+        voluptate sunt elit mollit officia ad enim sit consectetur enim.
+      </p>
+      <div>
+        <img src="/img/lindsay.jpg" />
+        Lindsay Walton
+      </div>
+    </article> -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- line-height -->
+
+    <!-- Utilities for controlling the leading, or line height, of an element. -->
+
+    <!-- 
+        text-<size>/<number>                text-base/6, text-sm/6
+        text-<size>/(<custom-property>) 
+        text-<size>/[<value>]
+
+    -->
+    
+    <!-- Setting independently -->
+
+    <!-- 
+    
+        leading-none
+        leading-<number>                        leading-3
+        leading-(<custom-property>)
+        leading-[<value>] 
+        
+    -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- list-style-image -->
+
+    <!-- Utilities for controlling the marker images for list items. -->
+
+    <!-- 
+
+    list-image-[<value>]                    list-style-image: <value>;
+    list-image-(<custom-property>)          list-style-image: var(<custom-property>);
+    list-image-none                         list-style-image: none;
+    
+    
+    -->
+
+    <!-- <ul class="list-image-[url(/img/checkmark.png)]">
+        <li>5 cups chopped Porcini mushrooms</li>
+        <li>5 cups chopped Porcini mushrooms</li>
+        <li>5 cups chopped Porcini mushrooms</li>
+    </ul> -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- list-style-position -->
+    
+    <!-- Utilities for controlling the position of bullets and numbers in lists. -->
+
+    <!-- 
+
+    list-inside                 list-style-position: inside;
+    list-outside                list-style-position: outside;
+    
+    -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- list-style-type -->
+
+    <!-- Utilities for controlling the marker style of a list. -->
+
+    <!-- 
+    
+        list-disc                   list-style-type: disc;
+        list-decimal                list-style-type: decimal;
+        list-none                   list-style-type: none;
+        list-(<custom-property>)    list-style-type: var(<custom-property>);
+        list-[<value>]              list-style-type: <value>;
+            
+    -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- Utilities for controlling the alignment of text. -->
+
+    <!-- 
+            
+        text-left                   text-align: left;
+        text-center                 text-align: center;
+        text-right                  text-align: right;
+        text-justify                text-align: justify;
+        text-start                  text-align: start;
+        text-end                    text-align: end;
+    
+    
+    -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- text-transform -->
+
+    <!-- Utilities for controlling the capitalization of text. -->
+
+    <!-- 
+          uppercase           text-transform: uppercase;
+          lowercase           text-transform: lowercase;
+          capitalize          text-transform: capitalize;
+          normal-case         text-transform: none;
+    -->
+
+    <p class="uppercase">The quick brown fox ...</p>
+
+    <!-- ======================================================================================================= -->
+
+    <!-- text-overflow -->
+
+    <!-- Utilities for controlling how the text of an element overflows. -->
+
+    <!-- 
+        truncate
+        text-ellipsis
+        text-clip
+    -->
+
+    <p class="truncate">The longest word in any of the major...</p>
+
+
+    <!-- ======================================================================================================= -->
+
+    <!-- text-wrap -->
+
+    <!-- text-indent -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- vertical-align -->
+
+    <!-- Utilities for controlling the vertical alignment of an inline or table-cell box. -->
+
+    <!-- 
+        align-baseline              vertical-align: baseline;
+        align-top                   vertical-align: top;
+        align-middle                vertical-align: middle;
+        align-bottom                vertical-align: bottom;
+        align-text-top              vertical-align: text-top;
+        align-text-bottom           vertical-align: text-bottom;
+        align-sub                   vertical-align: sub;
+        align-super                 vertical-align: super;
+        align-(<custom-property>)   vertical-align: var(<custom-property>);
+        align-[<value>]             vertical-align: <value>;
+    -->
+
+    <span class="inline-block align-baseline">The quick brown fox...</span>
+
+    <!-- ======================================================================================================= -->
+
+    <!-- white-space -->
+
+    <!-- word-break -->
+
+    <!-- overflow-wrap -->
+
+    <!-- hyphens -->
+
+    <!-- content -->
+
+  </body>
+</html>

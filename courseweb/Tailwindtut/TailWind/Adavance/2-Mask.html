@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Effects in Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <!-- Utilities for controlling an element's mask image. -->
+
+    <div class="flex items-center gap-14 mb-30">
+        <div class="mask-[url(../Images/square-grunge.png)] bg-[url(../Images/camels.jpg)] size-100 bg-cover bg-center rounded-[80px] mask-center">
+            <p class="text-[15px] text-amber-600 text-center ms-15 pt-75">Lorem ipsum dolor sit amet <br> consectetur
+                adipisicing elit. Sint, at.</p>
+
+        </div>
+
+        <!-- ======================================================================================================= -->
+
+        <!-- Masking edges -->
+
+        <!-- Use utilities like mask-b-from-<value> and mask-t-to-<value> to add a linear gradient mask to a single side of an element: -->
+
+        <div class="mask-b-from-50% bg-[url(../Images/camels.jpg)] size-100 bg-cover bg-center rounded-[20px]">
+            <p class="text-[15px] text-amber-600 text-center ms-15 pt-75">Lorem ipsum dolor sit amet <br> consectetur
+                adipisicing elit. Sint, at.</p>
+        </div>
+
+        <!-- ======================================================================================================= -->
+
+        <div class="flex items-center gap-4">
+            <img class="mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-left size-100 bg-cover bg-center rounded-[20px]" src="../Images/women.jpg" / >
+            <div class="font-medium">
+                <p class="font-mono text-xs text-blue-500 uppercase dark:text-blue-400">Stree</p>
+                <p class="mt-2 text-base text-gray-700 dark:text-gray-300">Always Respect Womens</p>
+                <p class="mt-1 text-sm leading-relaxed  text-gray-500">
+                    Vo Stree hai kuch bhi kar sakti hai...
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ======================================================================================================= -->
+
+    <!-- mask-mode -->
+
+    <!-- Utilities for controlling an element's mask mode. -->
+
+    <!-- 
+            mask-alpha                  mask-mode: alpha;
+            mask-luminance              mask-mode: luminance;
+            mask-match                  mask-mode: match-source;
+    -->
+
+    <!-- <div class="mask-alpha mask-r-from-black mask-r-from-50% mask-r-to-transparent bg-[url(../Images/camels.jpg)] size-100 bg-cover"></div> -->
+
+
+    <!-- ======================================================================================================= -->
+
+    <!-- mask-origin -->
+
+    <!-- Utilities for controlling how an element's mask image is positioned relative to borders, padding, and content. -->
+
+    <div class="flex items-center gap-10 mb-20">
+        <div class="mask-origin-border border-3 p-1.5 mask-[url(../Images/square-grunge2.png)] bg-[url(../Images/camels.jpg)]  size-100 bg-cover mask-center"></div>
+        <div class="mask-origin-padding border-3 p-1.5 mask-[url(../Images/square-grunge2.png)] bg-[url(../Images/camels.jpg)] size-100 bg-cover mask-center"></div>
+        <div class="mask-origin-content border-3 p-1.5 mask-[url(../Images/square-grunge2.png)] bg-[url(../Images/camels.jpg)] size-100 bg-cover mask-center"></div>
+    </div>
+
+    <!-- mask-position -->
+
+    <!-- mask-repeat -->
+
+    <!-- mask-size -->
+
+    <!-- mask-type -->
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

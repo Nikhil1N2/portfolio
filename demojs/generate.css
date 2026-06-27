@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+
+}
+div{
+    align-items: center;
+    height:100px;
+    width:400px;
+    border:1px solid black;
+    margin: auto;
+}
+.box{
+    height:50px;
+    width: 50px;
+    background:green;
+    border:1px solid black;
+
+
+}

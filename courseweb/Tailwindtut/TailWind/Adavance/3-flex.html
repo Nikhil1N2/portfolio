@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box In Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Flex -->
+    <!-- Utilities for controlling how flex items both grow and shrink. -->
+
+    <!-- Use flex-<number> utilities like flex-1 to allow a flex item to grow and shrink as needed, ignoring its initial size: -->
+
+    <div class="flex">
+      <div class="w-64 flex-1 bg-purple-500">02</div>
+      <div class="w-32 flex-2 bg-red-500">03</div>
+    </div>
+
+    <!-- Use flex-initial to allow a flex item to shrink but not grow, taking into account its initial size: -->
+
+    <!-- Use flex-auto to allow a flex item to grow and shrink, taking into account its initial size: -->
+
+    <!-- Use flex-none to prevent a flex item from growing or shrinking: -->
+
+    <!-- Use the flex-[<value>] syntax to set the flex shorthand property based on a completely custom value: -->
+
+    <!-- For CSS variables, you can also use the flex-(<custom-property>) syntax: -->
+
+    <!-- =========================================================================================================== -->
+
+    <!-- flex-grow -->
+
+    <!-- Utilities for controlling how flex items grow. -->
+
+    <div class="flex ...">
+      <div class="size-14 flex-none ...">01</div>
+      <div class="size-14 grow ...">02</div>
+      <div class="size-14 flex-none ...">03</div>
+    </div>
+
+    <!-- =========================================================================================================== -->
+
+    <!-- flex-shrink -->
+
+    <!-- Utilities for controlling how flex items shrink. -->
+
+    <div class="flex ...">
+      <div class="h-14 w-14 flex-none ...">01</div>
+      <div class="h-14 w-64 shrink ...">02</div>
+      <div class="h-14 w-14 flex-none ...">03</div>
+    </div>
+
+    <!-- =========================================================================================================== -->
+
+    <!-- flex-wrap -->
+
+    <!-- Utilities for controlling how flex items wrap. -->
+
+    <div class="flex flex-nowrap">
+      <div>01</div>
+      <div>02</div>
+      <div>03</div>
+    </div>
+
+    <!-- =========================================================================================================== -->
+
+    <!-- flex-direction -->
+
+    <!-- Utilities for controlling the direction of flex items. -->
+
+    <div class="flex flex-row ...">
+      <div>01</div>
+      <div>02</div>
+      <div>03</div>
+    </div>
+
+    <!-- =========================================================================================================== -->
+
+    <!-- flex-basis -->
+
+    <!-- Utilities for controlling the initial size of flex items. -->
+
+    <div class="flex flex-row">
+      <div class="basis-64">01</div>
+      <div class="basis-64">02</div>
+      <div class="basis-128">03</div>
+    </div>
+  </body>
+</html>
+
+
+<!-- 
+
+justify-content
+
+justify-items
+
+align-items
+
+align-content
+
+align-self
+
+place-content
+
+place-items
+
+place-self
+
+gap
+
+order
+
+
+-->

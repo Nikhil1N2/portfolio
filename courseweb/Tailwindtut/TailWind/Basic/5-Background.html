@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background in Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- background-color -->
+
+    <!-- Utilities for controlling an element's background color. -->
+
+    <button class="bg-blue-500">Button A</button>
+    <button class="bg-cyan-500">Button B</button>
+    <button class="bg-pink-500">Button C</button>
+
+    <!-- ======================================================================================================= -->
+
+    <!-- Changing the opacity -->
+    <button class="bg-sky-500/100">
+        change me
+    </button>
+
+    <!-- Using a custom value -->
+
+    <div class="bg-[#50d71e]">
+        <!-- ... -->
+    </div>
+
+    <!-- ======================================================================================================= -->
+
+    <!-- background-image -->
+     <div class="bg-[url())] text-white">
+         </div>
+
+    <!-- ======================================================================================================= -->
+
+    <!-- background-size -->
+
+    <!-- Utilities for controlling the background size of an element's background image. -->
+
+    <!-- 
+            bg-auto                             background-size: auto;
+            bg-cover                            background-size: cover;
+            bg-contain                          background-size: contain;
+            bg-size-(<custom-property>)         background-size: var(<custom-property>);
+            bg-size-[<value>]                   background-size: <value>;
+    -->
+    
+    <!-- ======================================================================================================= -->
+
+
+
+    <!-- background-repeat -->
+
+    <!-- Utilities for controlling the repetition of an element's background image. -->
+
+    <!-- 
+            bg-repeat                       background-repeat: repeat;
+            bg-repeat-x                     background-repeat: repeat-x;
+            bg-repeat-y                     background-repeat: repeat-y;
+            bg-repeat-space                 background-repeat: space;
+            bg-repeat-round                 background-repeat: round;
+            bg-no-repeat                    background-repeat: no-repeat; 
+    -->
+    
+    <!-- ======================================================================================================= -->
+        
+    <!-- background-position -->
+
+    <!-- Utilities for controlling the position of an element's background image. -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- background-clip -->
+
+    <!-- Utilities for controlling the bounding box of an element's background. -->
+
+    <!-- 
+            bg-clip-border                  background-clip: border-box;
+            bg-clip-padding                 background-clip: padding-box;
+            bg-clip-content                 background-clip: content-box;
+            bg-clip-text                    background-clip: text;
+    -->
+    
+    <p class="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-5xl font-extrabold text-transparent ...">
+        Hello world
+    </p>
+
+    <!-- ======================================================================================================= -->
+
+    <!-- background-attachment -->
+    
+    <!-- Utilities for controlling how a background image behaves when scrolling. -->
+
+    <!-- 
+            bg-fixed                background-attachment: fixed;
+            bg-local                background-attachment: local;
+            bg-scroll               background-attachment: scroll;
+    -->  
+</body>
+</html>
