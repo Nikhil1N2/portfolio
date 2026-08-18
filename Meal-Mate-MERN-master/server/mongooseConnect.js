@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const mongodb = async () => {
     try {
-        await mongoose.connect("mongodb+srv://shivanshvasuofficial:Shiva1234@cluster0.oygyq78.mongodb.net/foodapp")
+        await mongoose.connect("mongodb+srv://nikhilproject:nikhilproject@cluster0.60bwunz.mongodb.net/?appName=foodapp")
         console.log("DB connected");
         const foodCollection = await mongoose.connection.db.collection("food");
         const data = await foodCollection.find({}).toArray();

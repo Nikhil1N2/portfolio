@@ -12,7 +12,7 @@ export default function Home() {
   const [foodItem, setFoodItem] = useState([])
 
   async function loadData() {
-    let response = await fetch("http://localhost:5000/api/foodData", {
+    let response = await fetch("http://localhost:5001/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -32,7 +32,7 @@ export default function Home() {
 
   const [searchedString, setSearchedString] = useState("")
   const [cardButton,setcardButton]=useState(false)
-  const [showAlert, setShowAlert] = useState(true);
+  const [showAlert] = useState(true);
   
   return (
     <div>
